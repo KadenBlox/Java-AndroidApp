@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#818181">
+
+
+    <ImageView
+        android:id="@+id/imgTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_border"
+        android:src="@drawable/ic_access_time_black_24dp"
+        app:layout_constraintEnd_toStartOf="@id/txtTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_border"
+        android:src="@drawable/ic_attach_money_black_24dp"
+        app:layout_constraintEnd_toStartOf="@id/txtMoney"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTime" />
+
+    <ImageView
+        android:id="@+id/imgPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_border"
+        android:src="@drawable/ic_person_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMoney"
+        app:layout_constraintEnd_toStartOf="@+id/txtPop"
+        app:layout_constraintStart_toEndOf="@+id/txtIncome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_border"
+        android:src="@drawable/ic_business_center_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMoney"
+        app:layout_constraintEnd_toStartOf="@+id/txtEmp"
+        app:layout_constraintStart_toEndOf="@+id/txtIncome"
+        app:layout_constraintTop_toBottomOf="@+id/imgPop"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtIncome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/text_border"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMoney"
+        app:layout_constraintEnd_toStartOf="@+id/imgEmp"
+        app:layout_constraintStart_toEndOf="@+id/txtMoney"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/text_border"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imgMoney"
+        app:layout_constraintEnd_toStartOf="@id/txtIncome"
+        app:layout_constraintStart_toEndOf="@+id/imgTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMoney"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/text_border"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMoney"
+        app:layout_constraintEnd_toStartOf="@id/txtIncome"
+        app:layout_constraintStart_toEndOf="@+id/imgMoney"
+        app:layout_constraintTop_toBottomOf="@+id/txtTime" />
+
+    <TextView
+        android:id="@+id/txtPop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/text_border"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/txtMoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgPop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEmp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/text_border"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imgEmp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgEmp"
+        app:layout_constraintTop_toBottomOf="@+id/txtPop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
